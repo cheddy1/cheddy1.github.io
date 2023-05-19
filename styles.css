@@ -23,12 +23,22 @@ p {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
+    body {
+        background-color: rgb(255, 255, 246);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    body {
+        background-color: rgb(255, 255, 246);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
