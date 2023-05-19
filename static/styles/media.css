@@ -33,7 +33,7 @@
     }
     .two-col {
         float: left;
-        width: 50% !important;
+        width: 100% !important;
     }
 }
 
