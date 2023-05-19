@@ -1,17 +1,53 @@
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="static/styles/styles.css">
+        <link rel="stylesheet" href="static/styles/media.css">
+        <script type="text/javascript" src="static/scripts/tabs.js"></script>
+        <title>CheddyDev</title>
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico">
     </head>
     <body>
-        <div id="about">
-            <p><b>Hello!</b></p> 
-            <p>My name is Christian Edwards, but I also go "ched" or "cheddy".
+        <section id="about">
+            <h2>Hello!</h2> 
+            <p class="main-content">My name is Christian Edwards, but I also go by "ched" or "cheddy".
                 I am a recent computer engineering graduate from the University of Kansas, 
-                and I will start soon as a software engineer for Bloomberg L.P.</p>
-        </div>
-        <div id="work-exp">
+                soon starting as a software engineer for Bloomberg L.P.</p>
+        </section>
+        <section class="sections">
+            <h2>Work Experience</h2>
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'full-time')">Full Time</button>
+                <button class="tablinks" onclick="openTab(event, 'internships')">Internships</button>
+              </div>
+              <div id="full-time" class="tabcontent" style="display: block;">
+                <div class="row">
+                    <p><a href="https://www.bloomberg.com/"><b>Bloomberg L.P.</b></a> - Software Engineer<br><i>July 2023 - Present</i></p>
+                    <p>Starting in July 2023</p>
+                </div>
+              </div>
+              
+              <div id="internships" class="tabcontent">
+                <div class="row">
+                    <div class="two-col">
+                        <p><a href="https://www.bp.com/"><b>bp</b></a> - Software Engineer Intern<br><i>May 2022 - August 2022</i></p>
+                        <p>Placeholder</p>
+                    </div>
+                    <div class="two-col">
+                        <p><a href="https://www.bp.com/"><b>Metronet</b></a> - Voice and Video Engineer Intern<br><i>May 2021 - August 2021</i></p>
+                        <p>Placeholder</p>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <section class="sections">
+            <h2>Projects</h2>
+            <div class="project-cols">
 
-        </div>
+            </div>
+        </section>
+        <section class="sections">
+            <h2>Get In Touch!</h2>
+        </section>
     </body>
     
 </html>
