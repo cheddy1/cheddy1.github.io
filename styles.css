@@ -1,8 +1,5 @@
 body {
     background-color: rgb(255, 255, 246);
-    margin-left: 225px;
-    margin-right: 225px;
-    margin-top: 40px;
 }
 
 header {
@@ -24,7 +21,6 @@ p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        background-color: rgb(255, 255, 246);
         margin-left: 20px !important;
         margin-right: 20px !important;
         margin-top: 8px !important;
@@ -33,20 +29,37 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    body {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+        margin-top: 10px !important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    body {
+        background-color: rgb(255, 255, 246);
+        margin-left: 75px !important;
+        margin-right: 75px !important;
+        margin-top: 15px !important;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    body {
+        margin-left: 150px !important;
+        margin-right: 150px !important;
+        margin-top: 35px !important;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    body {
+        margin-left: 225px !important;
+        margin-right: 225px !important;
+        margin-top: 40px !important;
+    }
 }
