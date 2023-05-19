@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(255, 255, 246);
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 40px;
+}
+
+header {
+    padding-left: 25%;
+    padding-top: 1%;
+    font-size: 35px;
+    border-bottom: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
+    border-style: solid;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
