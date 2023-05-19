@@ -1,7 +1,7 @@
 body {
     background-color: rgb(255, 255, 246);
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 225px;
+    margin-right: 225px;
     margin-top: 40px;
 }
 
@@ -25,20 +25,15 @@ p {
 @media only screen and (max-width: 600px) {
     body {
         background-color: rgb(255, 255, 246);
-        margin-left: 5px !important;
-        margin-right: 5px !important;
-        margin-top: 2px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        margin-top: 8px !important;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: rgb(255, 255, 246);
-        margin-left: 5px !important;
-        margin-right: 5px !important;
-        margin-top: 2px !important;
-    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
