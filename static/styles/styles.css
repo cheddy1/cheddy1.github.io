@@ -4,11 +4,11 @@ body {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 23px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 a {
@@ -22,6 +22,10 @@ br {
     margin-top: 3px;
 }
 
+button {
+    font-size: 15px;
+}
+
 .row:after {
     content: "";
     display: table;
@@ -29,7 +33,7 @@ br {
 }
 
 .main-content {
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .section {
@@ -41,12 +45,7 @@ br {
 }
 
 .section-border {
-    border-bottom: 1px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-style: solid;
-    border-color: black;
+    border-bottom: thin solid rgb(54, 54, 54);
 }
 
 .tab {
