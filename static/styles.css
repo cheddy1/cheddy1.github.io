@@ -14,13 +14,9 @@ h2 {
     font-size: 23px;
 }
 
-p {
-    font-size: 16px;
-}
-
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(3, 0, 68);
 }
 
 br {
@@ -117,8 +113,19 @@ button {
 
 .image {
     width: 100%;
-    max-width: 55px;
+    max-width: 32px;
     height: auto;
+    opacity: .88;
+    padding-right: .5vw; 
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials-text {
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 766px) {
@@ -127,6 +134,9 @@ button {
     }
     .project-row {
         margin-top: -1vh !important;
+    }
+    .image {
+        padding-right: 2.2vw !important;
     }
 }
 
@@ -137,11 +147,14 @@ button {
     .project-row {
         margin-top: -1vh !important;
     }
+    .image {
+        padding-right: 1.3vw !important;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     body {
-        margin: 2vh 15vw !important;
+        margin: 2vh 12vw !important;
     }
     .row {
         display: flex !important;
