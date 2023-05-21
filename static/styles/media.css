@@ -1,83 +1,40 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 766px) {
     body {
-        margin-left: 18px !important;
-        margin-right: 18px !important;
-        margin-top: 12px !important;
-    }
-    .two-col {
-        width: 100% !important;
-    }
-    .three-col {
-        width: 100% !important;
-    }
-    .left-col {
-        margin-right: 0% !important;
+        margin: 1vh 4vw 1vh 4vw !important;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 767px) and (max-width: 991px){
     body {
-        margin-left: 21px !important;
-        margin-right: 21px !important;
-        margin-top: 14px !important;
-    }
-    .two-col {
-        width: 100% !important;
-    }
-    .three-col {
-        width: 100% !important;
-    }
-    .left-col {
-        margin-right: 0% !important;
+        margin: 2vh 6vw 2vh 6vw !important;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px){
     body {
-        margin-left: 50px !important;
-        margin-right: 50px !important;
-        margin-top: 20px !important;
+        margin: 2vh 15vw 2vh 15vw !important;
     }
-    .two-col {
-        width: 100% !important;
-    }
-    .three-col {
-        width: 100% !important;
-    }
-    .left-col {
-        margin-right: 0% !important;
-    }
+    .row {
+        display: flex !important;
+    }   
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        margin-left: 175px !important;
-        margin-right: 175px !important;
-        margin-top: 40px !important;
-    }
-    .two-col {
-        width: 46% !important;
-    }
-    .three-col {
-        width: 30% !important;
-    }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     body {
-        margin-left: 275px !important;
-        margin-right: 275px !important;
-        margin-top: 50px !important;
+        margin: 2vh 18vw 2vh 18vw !important;
     }
-    .two-col {
-        width: 46% !important;
+    .row {
+        display: flex !important;
+    }   
+}
+
+@media only screen and (min-width: 1750px) {
+    body {
+        margin: 2vh 22vw 2vh 22vw !important;
     }
-    .three-col {
-        width: 30% !important;
-    }
+    .row {
+        display: flex !important;
+    }   
 }

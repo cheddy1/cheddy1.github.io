@@ -1,6 +1,12 @@
 body {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 248);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 h2 {
@@ -8,7 +14,7 @@ h2 {
 }
 
 p {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 a {
@@ -19,37 +25,42 @@ a {
 br {
     display: block;
     content: "";
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 button {
     font-size: 15px;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .main-content {
-    font-size: 21px;
+    font-size: 17px;
 }
 
-.section {
-    margin-top: 30px;
+.section-bot {
+    padding-bottom: 1vh;
+}
+
+.section-top {
+    padding-top: 1vh;
 }
 
 .col {
-    float: left;
+    flex: 1;
 }
 
 .section-border {
-    border-bottom: thin solid rgb(54, 54, 54);
+    border-bottom: 2px solid rgb(143, 143, 143);
+}
+
+.row {
+    gap: 2vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 
 .tab {
     overflow: hidden;
+    margin-left: 1vw;
 }
 
 .tab button {
@@ -60,12 +71,7 @@ button {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    border-bottom: 1px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-color: black;
-    border-style: solid;
+    border-bottom: thin solid rgb(143, 143, 143);
 }
 
 .tab button:hover {
@@ -76,11 +82,17 @@ button {
     background-color: #dddddd;
 }
 
+.preload {
+    animation: none !important;
+}
+
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border-top: none;
-    animation: fadeEffect .3s;
+    animation: fadeEffect .35s;
+}
+
+.tabcontent.prevent-animation {
+    animation-duration: 0ms;
 }
 
 /* Go from zero to full opacity */
@@ -92,4 +104,14 @@ button {
     to {
         opacity: 1;
     }
+}
+
+.gray {
+    filter: grayscale(1);
+}
+
+.image {
+    width: 100%;
+    max-width: 55px;
+    height: auto;
 }
