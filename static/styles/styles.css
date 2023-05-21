@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     background-color: rgb(255, 255, 248);
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1vh;
 }
 
 html {
@@ -58,6 +59,10 @@ button {
     margin-left: 1vw;
 }
 
+.project-row {
+    margin-top: -2vh;
+}
+
 .tab {
     overflow: hidden;
     margin-left: 1vw;
@@ -107,7 +112,7 @@ button {
 }
 
 .gray {
-    filter: grayscale(1);
+    filter: grayscale(.6);
 }
 
 .image {
