@@ -87,7 +87,8 @@ button {
 }
 
 .tabcontent {
-    display: none;
+    display: block;
+    visibility: hidden;
     animation: fadeEffect .35s;
 }
 

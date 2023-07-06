@@ -15,6 +15,8 @@ window.onload = (event) => {
         fullTime.style.display = "block";
         fullTime.style.height = height;
     }
+    fullTime.style.visibility = "visible";
+    internships.style.visibility = "visible";
 };
 
 function openTab(evt, type) {
