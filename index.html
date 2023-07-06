@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="static/styles.css">
     <script type="text/javascript" src="static/scripts.js"></script>
-    <title>CheddyDev</title>
+    <title>Cheddy Development</title>
     <link rel="apple-touch-icon" sizes="120x120" href="static/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
@@ -18,7 +18,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HWX1YPB80"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-9HWX1YPB80');
     </script>
@@ -26,7 +26,8 @@
 
 <body>
     <section class="section-border section-bot">
-        <h2>Hello!</h2>
+        <div class='console-container'><span class="animated" id="animated"></span><span
+                class='console-underscore animated' id='console'>&#95;</span></div>
         <p class="main-content">My name is Christian Edwards, but I also go by "Ched" or "Cheddy".
             I am a recent computer engineering graduate from the University of Kansas,
             soon starting as a software engineer for Bloomberg L.P.</p>
@@ -40,18 +41,20 @@
             <button class="tablinks active" onclick="openTab(event, 'full-time')">Full Time</button>
             <button class="tablinks" onclick="openTab(event, 'internships')">Internships</button>
         </div>
-        <div id="full-time" class="tabcontent prevent-animation" style="display: block;">
+        <div id="full-time" class="tabcontent prevent-animation">
             <div class="row">
-                <div class="col">
+                <div class="col bloomberg">
                     <p class="main-content"><a target="_blank" href="https://www.bloomberg.com/"><b>Bloomberg L.P.</b> -
                             Software Engineer<br></a><i>July
                             2023 - Present</i></p>
-                    <p>Starting in July 2023!</p>
+                    <p>Starting in July 2023! Feel free to connect with me on LinkedIn
+                        as I start my first real job :)
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div id="internships" class="tabcontent">
+        <div id="internships" class="tabcontent" style="display: block;">
             <div class="row">
                 <div class="col">
                     <p class="main-content"><a target="_blank" href="https://www.bp.com/"><b>bp</b> - Software Engineer

@@ -115,7 +115,7 @@ button {
     max-width: 32px;
     height: auto;
     opacity: .88;
-    padding-right: .5vw; 
+    padding-right: .5vw;
 }
 
 .socials {
@@ -131,33 +131,38 @@ button {
     body {
         margin: 1vh 4vw !important;
     }
+
     .project-row {
         margin-top: -1vh !important;
     }
+
     .image {
         padding-right: 2.2vw !important;
     }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 991px){
+@media only screen and (min-width: 767px) and (max-width: 991px) {
     body {
         margin: 2vh 6vw !important;
     }
+
     .project-row {
         margin-top: -1vh !important;
     }
+
     .image {
         padding-right: 1.3vw !important;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px){
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     body {
         margin: 2vh 12vw !important;
     }
+
     .row {
         display: flex !important;
-    }   
+    }
 }
 
 
@@ -165,16 +170,39 @@ button {
     body {
         margin: 2vh 18vw !important;
     }
+
     .row {
         display: flex !important;
-    }   
+    }
 }
 
 @media only screen and (min-width: 1750px) {
     body {
         margin: 2vh 22vw !important;
     }
+
     .row {
         display: flex !important;
-    }   
+    }
+}
+
+.console-container {
+    display: block;
+    height: 24px;
+}
+
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+}
+
+.animated {
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+}
+
+.hidden {
+    opacity: 0;
 }
