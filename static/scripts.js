@@ -1,3 +1,4 @@
+var bigWindow = false;
 window.onload = (event) => {
     setTimeout(function () {
         document.getElementById("full-time").classList.remove("prevent-animation");
@@ -8,12 +9,14 @@ window.onload = (event) => {
     if (window.matchMedia("(max-width: 991px)").matches) {
         internships.style.display = "none";
         fullTime.style.display = "block";
+        bigWindow = false;
     }
     else {
         var height = document.defaultView.getComputedStyle(internships, "").getPropertyValue("height");
         internships.style.display = "none";
         fullTime.style.display = "block";
         fullTime.style.height = height;
+        bigWindow = true;
     }
     fullTime.style.visibility = "visible";
     internships.style.visibility = "visible";
@@ -22,7 +25,9 @@ window.onload = (event) => {
 function openTab(evt, type) {
     var tabcontent = document.getElementsByClassName("tabcontent");
     var tablinks = document.getElementsByClassName("tablinks");
-
+    if (bigWindow) {
+        document.getElementById('full-time').style.height = document.defaultView.getComputedStyle(internships, "").getPropertyValue("height");
+    }
     for (var i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
@@ -51,7 +56,7 @@ function consoleText() {
                 temp = 1;
                 letterCount += temp;
                 waiting = false;
-            }, 1000)
+            }, 1500)
         } else if (letterCount === text[0].length + 1 && waiting === false) {
             waiting = true;
             window.setTimeout(function () {
