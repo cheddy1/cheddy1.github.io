@@ -9,6 +9,10 @@ html {
     box-sizing: border-box;
 }
 
+.technology {
+    font-size: 13;
+}
+
 h2 {
     font-size: 23px;
 }
