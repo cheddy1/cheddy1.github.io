@@ -1,213 +1,213 @@
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 248);
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0e9e4;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .technology {
-    font-size: 13;
+  font-size: 13;
 }
 
 h2 {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(3, 0, 68);
+  text-decoration: none;
+  color: rgb(3, 0, 68);
 }
 
 br {
-    display: block;
-    content: "";
-    margin-top: 2px;
+  display: block;
+  content: "";
+  margin-top: 2px;
 }
 
 button {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .main-content {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .section-bot {
-    padding-bottom: 1vh;
+  padding-bottom: 1vh;
 }
 
 .section-top {
-    padding-top: 1vh;
+  padding-top: 1vh;
 }
 
 .col {
-    flex: 1;
+  flex: 1;
 }
 
 .section-border {
-    border-bottom: 2px solid rgb(143, 143, 143);
+  border-bottom: 2px solid rgb(143, 143, 143);
 }
 
 .row {
-    gap: 2vw;
-    margin-right: 1vw;
-    margin-left: 1vw;
+  gap: 2vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
 }
 
 .project-row {
-    margin-top: -2vh;
+  margin-top: -2vh;
 }
 
 .tab {
-    overflow: hidden;
-    margin-left: 1vw;
+  overflow: hidden;
+  margin-left: 1vw;
 }
 
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    border-bottom: thin solid rgb(143, 143, 143);
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-bottom: thin solid rgb(143, 143, 143);
 }
 
 .tab button:hover {
-    background-color: #f0f0f0;
+  background-color: #efe0d5;
 }
 
 .tab button.active {
-    background-color: #dddddd;
+  /* background-color: #dddddd; */
+  background-color: #f0c19d;
 }
 
 .preload {
-    animation: none !important;
+  animation: none !important;
 }
 
 .tabcontent {
-    display: block;
-    visibility: hidden;
-    animation: fadeEffect .35s;
+  display: block;
+  visibility: hidden;
+  animation: fadeEffect 0.35s;
 }
 
 .tabcontent.prevent-animation {
-    animation-duration: 0ms;
+  animation-duration: 0ms;
 }
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .gray {
-    filter: grayscale(.5);
+  filter: grayscale(0.5);
 }
 
 .image {
-    width: 100%;
-    max-width: 32px;
-    height: auto;
-    opacity: .88;
-    padding-right: .5vw;
+  width: 100%;
+  max-width: 32px;
+  height: auto;
+  opacity: 0.88;
+  padding-right: 0.5vw;
+  filter: invert(64%) sepia(72%) saturate(388%) hue-rotate(336deg) brightness(99%) contrast(88%);
 }
 
 .socials {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .socials-text {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 766px) {
-    body {
-        margin: 1vh 4vw !important;
-    }
+  body {
+    margin: 1vh 4vw !important;
+  }
 
-    .project-row {
-        margin-top: -1vh !important;
-    }
+  .project-row {
+    margin-top: -1vh !important;
+  }
 
-    .image {
-        padding-right: 2.2vw !important;
-    }
+  .image {
+    padding-right: 2.2vw !important;
+  }
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
-    body {
-        margin: 2vh 6vw !important;
-    }
+  body {
+    margin: 2vh 6vw !important;
+  }
 
-    .project-row {
-        margin-top: -1vh !important;
-    }
+  .project-row {
+    margin-top: -1vh !important;
+  }
 
-    .image {
-        padding-right: 1.3vw !important;
-    }
+  .image {
+    padding-right: 1.3vw !important;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    body {
-        margin: 2vh 12vw !important;
-    }
+  body {
+    margin: 2vh 12vw !important;
+  }
 
-    .row {
-        display: flex !important;
-    }
+  .row {
+    display: flex !important;
+  }
 }
 
-
 @media only screen and (min-width: 1200px) {
-    body {
-        margin: 2vh 18vw !important;
-    }
+  body {
+    margin: 2vh 18vw !important;
+  }
 
-    .row {
-        display: flex !important;
-    }
+  .row {
+    display: flex !important;
+  }
 }
 
 @media only screen and (min-width: 1750px) {
-    body {
-        margin: 2vh 22vw !important;
-    }
+  body {
+    margin: 2vh 22vw !important;
+  }
 
-    .row {
-        display: flex !important;
-    }
+  .row {
+    display: flex !important;
+  }
 }
 
 .console-container {
-    display: block;
-    height: 24px;
+  display: block;
+  height: 24px;
 }
 
-
 .console-underscore {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .animated {
-    font-size: 23px;
-    font-weight: bold;
-    color: black;
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }

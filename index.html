@@ -1,138 +1,187 @@
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="static/styles.css">
+  <head>
+    <link rel="stylesheet" href="static/styles.css" />
     <script type="text/javascript" src="static/scripts.js"></script>
     <title>Cheddy Development</title>
-    <link rel="apple-touch-icon" sizes="120x120" href="static/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png">
-    <link rel="manifest" href="static/favicons/site.webmanifest">
-    <link rel="mask-icon" href="static/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="static/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="static/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Cheddy's lightweight portfolio website!">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="static/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="static/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="static/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Cheddy's lightweight portfolio website!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HWX1YPB80"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-9HWX1YPB80');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9HWX1YPB80");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="section-border section-bot">
-        <div class='console-container'><span class="animated" id="animated"></span><span
-                class='console-underscore animated' id='console'>&#95;</span></div>
-        <p class="main-content">My name is Christian Edwards, but I also go by "Ched" or "Cheddy".
-            I am a recent computer engineering graduate from the University of Kansas,
-            and am currently a software engineer for Bloomberg L.P.</p>
-        <p class="main-content">Outside of work, you can catch me at the gym,
-            watching and playing sports like soccer, basketball, and football, or playing video games like Rocket League, CS:GO, and Cities: Skylines!</p>
+      <div class="console-container">
+        <span class="animated" id="animated"></span
+        ><span class="console-underscore animated" id="console">&#95;</span>
+      </div>
+      <p class="main-content">
+        My name is Christian Edwards, but I also go by "Ched" or "Cheddy". I am a recent computer
+        engineering graduate from the University of Kansas, and am currently a software engineer for
+        Bloomberg L.P.
+      </p>
+      <p class="main-content">
+        Outside of work, you can catch me at the gym, watching and playing sports like soccer,
+        basketball, and football, or playing video games like Rocket League, CS:GO, and Cities:
+        Skylines!
+      </p>
     </section>
     <section class="section-top section-bot section-border">
-        <h2>Work Experience</h2>
-        <div class="tab">
-            <button class="tablinks active" onclick="openTab(event, 'full-time')">Full Time</button>
-            <button class="tablinks" onclick="openTab(event, 'internships')">Internships</button>
+      <h2>Work Experience</h2>
+      <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'full-time')">Full Time</button>
+        <button class="tablinks" onclick="openTab(event, 'internships')">Internships</button>
+      </div>
+      <div id="full-time" class="tabcontent prevent-animation" style="display: none">
+        <div class="row">
+          <div class="col">
+            <p class="main-content">
+              <a target="_blank" href="https://www.bloomberg.com/"
+                ><b>Bloomberg L.P.</b> - Software Engineer<br /></a
+              ><i>July 2023 - Present</i>
+            </p>
+            <p>On the AIM Trade Blotters team working on post-trade things.</p>
+            <p class="technology">Technologies used: Typescript, Python, C++, React</p>
+          </div>
         </div>
-        <div id="full-time" class="tabcontent prevent-animation" style="display: none;">
-            <div class="row">
-                <div class="col">
-                    <p class="main-content"><a target="_blank" href="https://www.bloomberg.com/"><b>Bloomberg L.P.</b> -
-                            Software Engineer<br></a><i>July
-                            2023 - Present</i></p>
-                    <p>On the AIM Trade Blotters team working on post-trade things.</p>
-                    <p class="technology">Technologies used: React, Python</p>
-                </div>
-            </div>
-        </div>
+      </div>
 
-        <div id="internships" class="tabcontent">
-            <div class="row">
-                <div class="col">
-                    <p class="main-content"><a target="_blank" href="https://www.bp.com/"><b>bp</b> - Software Engineer
-                            Intern<br></a><i>May 2022 - August
-                            2022</i></p>
-                    <p>Developed an interactive web app to visualize gas flow data across the United States 
-                        for the gas scheduling and operations teams.</p>
-                    <p class="technology">Technologies used: Angular, C#, SQL</p>
-                </div>
-                <div class="col">
-                    <p class="main-content"><a target="_blank" href="https://www.metronet.com/"><b>Metronet</b> - Voice
-                            and Video Engineer
-                            Intern<br></a><i>May 2021 - August 2021</i></p>
-                    <p>Built applications for the voice and video departments to automate operations and reporting tools.</p>
-                    <p class="technology">Languages used: Python, JavaScript</p>
-                </div>
-            </div>
+      <div id="internships" class="tabcontent">
+        <div class="row">
+          <div class="col">
+            <p class="main-content">
+              <a target="_blank" href="https://www.bp.com/"
+                ><b>bp</b> - Software Engineer Intern<br /></a
+              ><i>May 2022 - August 2022</i>
+            </p>
+            <p>
+              Developed an interactive web app to visualize gas flow data across the United States
+              for the gas scheduling and operations teams.
+            </p>
+            <p class="technology">Technologies used: Angular, C#, SQL</p>
+          </div>
+          <div class="col">
+            <p class="main-content">
+              <a target="_blank" href="https://www.metronet.com/"
+                ><b>Metronet</b> - Voice and Video Engineer Intern<br /></a
+              ><i>May 2021 - August 2021</i>
+            </p>
+            <p>
+              Built applications for the voice and video departments to automate operations and
+              reporting tools.
+            </p>
+            <p class="technology">Languages used: Python, JavaScript</p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="section-top section-bot section-border">
-        <h2>Favorite Projects</h2>
-        <div class="row project-row">
-            <div class="col">
-                <p class="main-content"><a target="_blank"
-                        href="https://github.com/cheddy1/GeorgeBotCloud"><b>GeorgeBot</b><br><i>Python, JavaScript,
-                            C++</i></a></p>
-                <p>GeorgeBot is a LIDAR powered room scanning robot. I lead the cloud software team which
-                    was in charge of processing and displaying the LIDAR data.
-                    We built a Flask back-end to expose endpoints for the robot to send data to and a
-                    Vue front-end for a seamless UI experience.</p>
-            </div>
-            <div class="col">
-                <p class="main-content"><a target="_blank"
-                        href="https://github.com/cheddy1/Cheddy-Companion"><b>Companion App</b><br><i>Kotlin</i></a></p>
-                <p>The Companion app is a stock portfolio tracking application that simplifies the tedious tasks of
-                    balancing equity weight across multiple accounts. It also provides live quotes, balances, and other
-                    analytics tools.
-                </p>
-            </div>
-            <div class="col">
-                <p class="main-content"><a target="_blank" href="https://github.com/cheddy1/Trivskins-Bot"><b>Trivskins
-                            Bot</b><br><i>Python</i></a></p>
-                <p>Trivskins Bot is a Discord bot written with Discord.py for the CS:GO based trading server "Trivskins
-                    Trading".
-                    The bot has countless features including virtual market skin prices, modmail, a server wide economy,
-                    and more.
-                    At its peak, the bot was supporting 1,000+ users.
-                </p>
-            </div>
+      <h2>Favorite Projects</h2>
+      <div class="row project-row">
+        <div class="col">
+          <p class="main-content">
+            <a target="_blank" href="https://github.com/cheddy1/GeorgeBotCloud"
+              ><b>GeorgeBot</b><br /><i>Python, JavaScript, C++</i></a
+            >
+          </p>
+          <p>
+            GeorgeBot is a LIDAR powered room scanning robot. I lead the cloud software team which
+            was in charge of processing and displaying the LIDAR data. We built a Flask back-end to
+            expose endpoints for the robot to send data to and a Vue front-end for a seamless UI
+            experience.
+          </p>
         </div>
+        <div class="col">
+          <p class="main-content">
+            <a target="_blank" href="https://github.com/cheddy1/Cheddy-Companion"
+              ><b>Companion App</b><br /><i>Kotlin</i></a
+            >
+          </p>
+          <p>
+            The Companion app is a stock portfolio tracking application that simplifies the tedious
+            tasks of balancing equity weight across multiple accounts. It also provides live quotes,
+            balances, and other analytics tools.
+          </p>
+        </div>
+        <div class="col">
+          <p class="main-content">
+            <a target="_blank" href="https://github.com/cheddy1/Trivskins-Bot"
+              ><b>Trivskins Bot</b><br /><i>Python</i></a
+            >
+          </p>
+          <p>
+            Trivskins Bot is a Discord bot written with Discord.py for the CS:GO based trading
+            server "Trivskins Trading". The bot has countless features including virtual market skin
+            prices, modmail, a server wide economy, and more. At its peak, the bot was supporting
+            1,000+ users.
+          </p>
+        </div>
+      </div>
     </section>
     <section class="section-top">
-        <h2>Get In Touch!</h2>
-        <div class="row">
-            <div class="col">
-                <div class="socials">
-                    <a target="_blank" href="https://www.linkedin.com/in/christianedwards1/"><img
-                            src="static/linkedin.png" class="gray image" style="margin-bottom: .8vh;"
-                            alt="linkedin"></a>
-                    <a style="margin-top: -.8vh;" target="_blank"
-                        href="https://www.linkedin.com/in/christianedwards1/"><span class="socials-text"><span
-                                style="font-size: 20px;">&#8592;</span> Connect with me</span></a>
-                </div>
-                <div class="socials">
-                    <a target="_blank" href="https://github.com/cheddy1"><img src="static/github.png" class="image"
-                            alt="github" style="margin-bottom: .8vh;"></a>
-                    <a style="margin-top: -.8vh;" target="_blank" href="https://github.com/cheddy1"><span
-                            class="socials-text"><span style="font-size: 20px;">&#8592;</span> Check out my
-                            projects</span></a>
-                </div>
-                <div class="socials">
-                    <a target="_blank" href="mailto: christianedwards545@gmail.com"><img src="static/email.png"
-                            class="image" alt="email"></a>
-                    <a target="_blank" href="mailto: christianedwards545@gmail.com"><span class="socials-text"><span
-                                style="font-size: 20px;">&#8592;</span> Shoot me an email</span></a>
-                </div>
-                <p><a href="static/Resume_Christian_Edwards.pdf" download>Click here to download my resume.</a></p>
-            </div>
+      <h2>Get In Touch!</h2>
+      <div class="row">
+        <div class="col">
+          <div class="socials">
+            <a target="_blank" href="https://www.linkedin.com/in/christianedwards1/"
+              ><img
+                src="static/linkedin.png"
+                class="gray image"
+                style="margin-bottom: 0.8vh"
+                alt="linkedin"
+            /></a>
+            <a
+              style="margin-top: -0.8vh"
+              target="_blank"
+              href="https://www.linkedin.com/in/christianedwards1/"
+              ><span class="socials-text"
+                ><span style="font-size: 20px">&#8592;</span> Connect with me</span
+              ></a
+            >
+          </div>
+          <div class="socials">
+            <a target="_blank" href="https://github.com/cheddy1"
+              ><img src="static/github.png" class="image" alt="github" style="margin-bottom: 0.8vh"
+            /></a>
+            <a style="margin-top: -0.8vh" target="_blank" href="https://github.com/cheddy1"
+              ><span class="socials-text"
+                ><span style="font-size: 20px">&#8592;</span> Check out my projects</span
+              ></a
+            >
+          </div>
+          <div class="socials">
+            <a target="_blank" href="mailto: christianedwards545@gmail.com"
+              ><img src="static/email.png" class="image" alt="email"
+            /></a>
+            <a target="_blank" href="mailto: christianedwards545@gmail.com"
+              ><span class="socials-text"
+                ><span style="font-size: 20px">&#8592;</span> Shoot me an email</span
+              ></a
+            >
+          </div>
+          <p>
+            <a href="static/Resume_Christian_Edwards.pdf" download
+              >Click here to download my resume.</a
+            >
+          </p>
         </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
