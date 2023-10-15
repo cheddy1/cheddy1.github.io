@@ -79,12 +79,12 @@ button {
 }
 
 .tab button:hover {
-  background-color: #efe0d5;
+  background-color: #ede1d7;
 }
 
 .tab button.active {
   /* background-color: #dddddd; */
-  background-color: #f0c19d;
+  background-color: #f3d4bd;
 }
 
 .preload {
